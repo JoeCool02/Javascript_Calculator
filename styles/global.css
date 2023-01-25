@@ -1,0 +1,86 @@
+html {
+    height: 100%;
+    background: url(https://wallpapershome.com/images/pages/pic_h/17766.jpg);
+}
+
+body {
+    height: 100%;
+}
+
+#__next {
+
+    height: 100%;
+}
+
+#app {
+    height: 100%;
+}
+
+#container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#keyboard {
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    font-family: Roboto, Helvetica, sans-serif;
+    padding: 20px;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1px 1px;
+}
+
+.calcKey {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+
+.calcKey:hover {
+    font-weight: bold;
+}
+
+.calcKey:active {
+    box-shadow: 0 5px #666;
+    transform: scale(.9, .9);
+}
+
+#display {
+    grid-column: 1 / span 4;
+    justify-content: right;
+    background-color: black;
+    padding: 20px 15px;
+    text-align: right;
+    font-size: 30px;
+}
+
+#clear {
+    grid-column: 1 / span 2;
+    background-color: red;
+}
+
+#zero {
+    grid-column: 1 / span 2;
+}
+
+#equals {
+    grid-column-start: 4;
+    grid-row: 5 / span 2;
+    background-color: blue;
+}
